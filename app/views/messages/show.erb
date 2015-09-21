@@ -1,9 +1,12 @@
-<h1><%= @message.title %></h1>
-
-<p>
+<h1>
   Author: <%= @message.author %>
-</p>
+</h1>
 
+<% if @message.url %>
+<p>
+  <%= @message.url %>
+</p>
+<% end %>
 <p>
   <%= @message.content  %>
 </p>

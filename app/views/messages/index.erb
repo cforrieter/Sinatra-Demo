@@ -4,6 +4,11 @@
     <p>
       <%= message.content %>
     </p>
+    <% if message.url %>
+    <p>
+      <a href="<%= message.url %>"><%= message.url %></a>
+    </p>
+    <% end %>
   </div>
 <% end %>
 
