@@ -1,6 +1,6 @@
 <% @messages.each do |message| %>
   <div class="message">
-    <h3><small>By: <%= message.author %></small></h3>
+    <h3><a href="message/<%=message.id%>"><small>By:<%= message.author %></small></a></h3>
     <p>
       <%= message.content %>
     </p>

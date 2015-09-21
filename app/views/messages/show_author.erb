@@ -1,0 +1,21 @@
+<h1>
+  Author: <%= @messages[0].author %>
+</h1>
+<% @messages.each do |message| %>
+<% if message.created_at %>
+<h2>
+  On: <%= message.created_at %>
+</h2>
+<% end %>
+<% if message.url %>
+<p>
+  <%= message.url %>
+</p>
+<% end %>
+<p>
+  <%= message.content  %>
+</p>
+<hr/>
+<% end %>
+<hr/>
+<a href="/messages">Back to All Messages</a>

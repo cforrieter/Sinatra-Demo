@@ -1,6 +1,9 @@
 <h1>
   Author: <%= @message.author %>
 </h1>
+<h2>
+  On: <%= @message.created_at %>
+</h2>
 
 <% if @message.url %>
 <p>
@@ -12,4 +15,5 @@
 </p>
 
 <hr/>
+<a href="/messages/<%= @message.author %>">More from this author</a>
 <a href="/messages">Back to All Messages</a>
